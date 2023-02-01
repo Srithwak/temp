@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin Dashboard</title>
+</head>
+
+<body>
+   <form action="">
+      <div class="left__side half">
+         <h1>Create Event</h1>
+         <input class="event__name" type="text" placeholder="Event name" required><br>
+         <!-- <input class="event__description" type="text" placeholder="Event description" required><br> -->
+         <input class="prize" type="number" placeholder="Prize" required min="0" max="1000"><br>
+         <input class="start__date" type="date" placeholder="Start date" required id="start"><label for="start">Start date</label><br>
+         <input class="end__date" type="date" placeholder="End date" required id="end"><label for="end">End date</label><br>
+         <input type="button" value="Submit" onclick="createNewEvent()">
+         <h1>Current Events</h1>
+         <table>
+            <thead>
+               <tr>
+                  <th>Event name</th>
+                  <th>Prize</th>
+                  <th>Start date</th>
+                  <th>End date</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody class="data__output"></tbody>
+         </table>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <table>
+         <thead>
+            <tr>
+               <th>Student name</th>
+               <th>Username</th>
+               <th>Grade</th>
+               <th>Points</th>
+               <th>Actions</th>
+            </tr>
+         </thead>
+         <tbody class="studentData__output"></tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <input class="student_name" type="text" placeholder="Student Name" required><br>
+      <select class = "student_grade">
+         <option value = "-1">Grade</option>
+         <option value = "9">9</option>
+         <option value = "10">10</option>
+         <option value = "11">11</option>
+         <option value = "12">12</option>
+      </select><br><br>
+      <input class="student_username" type="text" placeholder="Student Username" required><br><br><br>
+      <input type="button" value="addStudent" onclick="addStudent()">
+   </form>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+      * {
+         font-family: 'JetBrains Mono', monospace;
+         user-select: none;
+         padding: 0;
+         margin: 0;
+      }
+
+      body {
+         background-color: #000;
+      }
+
+      h1 {
+         color: #fff;
+      }
+
+      table {
+         border-collapse: collapse;
+         color: #fff;
+         text-align: center;
+      }
+
+      thead {
+         background-color: #2f2c36;
+      }
+
+      tbody {
+         background-color: #3b3841;
+      }
+
+      tr:nth-child(even) {
+         background-color: #2f2c36;
+      }
+
+      th,
+      td {
+         padding: .5rem;
+      }
+
+      .button__bar {
+         display: flex;
+         gap: .5rem;
+      }
+
+      label {
+         color: #fff;
+      }
+
+      input {
+         border-radius: .25rem;
+         padding: .25rem;
+         border: none;
+      }
+
+      input[type=button] {
+         background-color: #aaa;
+         border-radius: .25rem;
+         transition: .15s;
+         padding: .25rem;
+         border: none;
+      }
+
+      input[type=button]:hover {
+         background-color: #ff6969;
+         color: #fff;
+      }
+   </style>
+   <script src="../preload/admin_preload.js"></script>
+</body>
+
+</html>

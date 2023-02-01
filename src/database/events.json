@@ -1,0 +1,23 @@
+[
+  {
+    "event_name": "Sample event",
+    "prize": "100",
+    "start_date": "",
+    "end_date": "",
+    "participants": []
+  },
+  {
+    "event_name": "rit",
+    "prize": "5",
+    "start_date": "10/11/0011",
+    "end_date": "11/01/0011",
+    "participants": []
+  },
+  {
+    "event_name": "sai",
+    "prize": "2",
+    "start_date": "01/12/2023",
+    "end_date": "01/19/2023",
+    "participants": []
+  }
+]

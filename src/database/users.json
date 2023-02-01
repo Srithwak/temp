@@ -1,0 +1,32 @@
+[
+  {
+    "key": 2,
+    "name": "Praneeth",
+    "grade": 12,
+    "points": 1000,
+    "prizes": [],
+    "username": "p",
+    "password": "p",
+    "admin": true
+  },
+  {
+    "key": 0,
+    "name": "Rithwak",
+    "grade": 12,
+    "points": 1000,
+    "prizes": [],
+    "username": "r",
+    "password": "r",
+    "admin": false
+  },
+  {
+    "key": 4,
+    "name": "test1",
+    "grade": 12,
+    "points": 1000,
+    "prizes": [],
+    "username": "i",
+    "password": "tmp:ty",
+    "admin": false
+  }
+]
